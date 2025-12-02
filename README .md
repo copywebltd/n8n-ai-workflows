@@ -155,16 +155,33 @@ These systems have been used to generate hundreds of AI videos for marketing cam
 
 ## Case Studies
 
+### AI Content Pipeline
+*A multi-model video generation system with human approval checkpoints*
+
+A two-phase content system where AI generates preview images for human approval before committing to expensive video generation. Supports 4 image models and 4 video models, all controlled from Google Sheets.
+
+**Key features:**
+- Human-in-the-loop prevents wasted API credits
+- 8 AI models accessible from one interface
+- Full status tracking and error logging
+- Automatic cloud backup
+
+[Read the full case study →](case-studies/ai-content-pipeline.md)
+
+---
+
 ### Motion Ads Content System
-*Turning static product photos into 6 video variations automatically*
+*Turning static product photos into 9 video variations automatically*
 
-A subscription box company needed motion ads for social media. Instead of manually creating each variation, we built a system that takes one product image and generates six different motion styles: person holding product, POV unboxing, camera movements, crafting process, reactions, and product focus.
+A subscription box company needed motion ads for social media. Instead of manually creating each variation, we built a system that takes one product image and generates nine different motion styles — all with a single click.
 
-**The challenge:** Creating video variations manually took 2-3 hours per product. With 50+ products per month, this wasn't sustainable.
+**Key features:**
+- "All" mode generates 9 variations from one input
+- Each motion type writes to its own column
+- Batch processing for efficiency
+- VEO3 for human motion, Kling for product shots
 
-**The solution:** A batch processing system that takes a single input row and spawns six parallel generation jobs — one for each motion type. Results are collected and written back to the sheet.
-
-**The result:** What took hours now takes minutes of human time (just review and approve). The system handles the waiting and API management.
+[Read the full case study →](case-studies/motion-ads-system.md)
 
 ---
 
